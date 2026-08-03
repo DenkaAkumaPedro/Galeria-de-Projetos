@@ -1,0 +1,114 @@
+{
+  "projetos": [
+    {
+      "id": "ia-dia-a-dia",
+      "titulo": "Aplicação de IA no Dia a dia",
+      "status": "nao-iniciado",
+      "versao": "0.0.0",
+      "icone": "🤖",
+      "cor": "#6366f1",
+      "descricao": "Explorar e desenvolver ferramentas de IA para uso cotidiano, aumentando produtividade e automatizando tarefas comuns.",
+      "tecnologias": ["IA", "Automação"],
+      "atualizadoEm": "03/08/2026"
+    },
+    {
+      "id": "automacao-tarefas",
+      "titulo": "Automação de Tarefas",
+      "status": "nao-iniciado",
+      "versao": "0.0.0",
+      "icone": "⚙️",
+      "cor": "#8b5cf6",
+      "descricao": "Criar sistemas automatizados para repetir tarefas rotineiras, economizando tempo e esforço manual.",
+      "tecnologias": ["Automação", "Scripts"],
+      "atualizadoEm": "03/08/2026"
+    },
+    {
+      "id": "linktree-pessoal",
+      "titulo": "Linktree Pessoal",
+      "status": "nao-iniciado",
+      "versao": "0.0.0",
+      "icone": "🔗",
+      "cor": "#ec4899",
+      "descricao": "Página de links pessoal para consolidar todas as minhas redes e projetos em um só lugar.",
+      "tecnologias": ["HTML", "CSS"],
+      "atualizadoEm": "03/08/2026"
+    },
+    {
+      "id": "linktree-profissional",
+      "titulo": "Linktree Profissional",
+      "status": "nao-iniciado",
+      "versao": "0.0.0",
+      "icone": "💼",
+      "cor": "#14b8a6",
+      "descricao": "Página de links profissional para展示 trabalhos, portfólio e contato profissional.",
+      "tecnologias": ["HTML", "CSS"],
+      "atualizadoEm": "03/08/2026"
+    },
+    {
+      "id": "integracao-apps",
+      "titulo": "Integração com Outros Apps",
+      "status": "nao-iniciado",
+      "versao": "0.0.0",
+      "icone": "📱",
+      "cor": "#f59e0b",
+      "descricao": "Conectar diferentes aplicativos e serviços para criar fluxos de trabalho mais eficientes.",
+      "tecnologias": ["APIs", "Integração"],
+      "atualizadoEm": "03/08/2026"
+    },
+    {
+      "id": "projeto-vtuber",
+      "titulo": "Projeto Vtuber",
+      "status": "nao-iniciado",
+      "versao": "0.0.0",
+      "icone": "🎮",
+      "cor": "#ef4444",
+      "descricao": "Explorar a criação de um avatar virtual para conteúdo em vídeo e streaming.",
+      "tecnologias": ["3D", "Avatar", "IA"],
+      "atualizadoEm": "03/08/2026"
+    },
+    {
+      "id": "tradutor-tela",
+      "titulo": "Tradutor de Tela",
+      "status": "nao-iniciado",
+      "versao": "0.0.0",
+      "icone": "🌐",
+      "cor": "#3b82f6",
+      "descricao": "Ferramenta para traduzir texto captado da tela em tempo real, útil para conteúdo em outros idiomas.",
+      "tecnologias": ["IA", "OCR", "Tradução"],
+      "atualizadoEm": "03/08/2026"
+    },
+    {
+      "id": "tradutor-videos",
+      "titulo": "Tradutor de Vídeos",
+      "status": "nao-iniciado",
+      "versao": "0.0.0",
+      "icone": "🎬",
+      "cor": "#a855f7",
+      "descricao": "Sistema para traduzir automaticamente o áudio de vídeos, gerando legendas ou dublagem.",
+      "tecnologias": ["IA", "Áudio", "Legendas"],
+      "atualizadoEm": "03/08/2026"
+    },
+    {
+      "id": "material-estudos",
+      "titulo": "Criação de Material de Estudos",
+      "status": "nao-iniciado",
+      "versao": "0.0.0",
+      "icone": "📚",
+      "cor": "#22c55e",
+      "descricao": "Gerar material de estudo personalizado usando IA para facilitar o aprendizado.",
+      "tecnologias": ["IA", "Educação"],
+      "atualizadoEm": "03/08/2026"
+    },
+    {
+      "id": "sincronizar-animes",
+      "titulo": "Sincronizar Lista de Animes",
+      "status": "nao-iniciado",
+      "versao": "0.0.0",
+      "icone": "🎌",
+      "cor": "#f97316",
+      "descricao": "Manter uma lista de animes sincronizada entre diferentes plataformas e redes sociais.",
+      "tecnologias": ["APIs", "Sincronização"],
+      "atualizadoEm": "03/08/2026"
+    }
+  ]
+}

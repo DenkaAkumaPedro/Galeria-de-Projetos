@@ -1,0 +1,181 @@
+/* ============================================
+   GALERIA DE PROJETOS - App Principal
+   ============================================ */
+
+const App = {
+  data: null,
+  currentPage: 'hub',
+  currentProject: null,
+
+  async init() {
+    await this.loadData();
+    this.setupRouter();
+    this.handleRoute();
+  },
+
+  async loadData() {
+    try {
+      const response = await fetch('data/projetos.json');
+      this.data = await response.json();
+    } catch (error) {
+      console.error('Erro ao carregar dados:', error);
+      this.data = { projetos: [] };
+    }
+  },
+
+  setupRouter() {
+    window.addEventListener('popstate', () => this.handleRoute());
+
+    document.addEventListener('click', (e) => {
+      const link = e.target.closest('[data-link]');
+      if (link) {
+        e.preventDefault();
+        const href = link.getAttribute('href');
+        this.navigate(href);
+      }
+    });
+  },
+
+  navigate(href) {
+    history.pushState(null, '', href);
+    this.handleRoute();
+  },
+
+  handleRoute() {
+    const path = window.location.pathname;
+    const segments = path.split('/').filter(Boolean);
+
+    if (segments.length === 0 || path === '/' || path === '/index.html') {
+      this.showHub();
+    } else if (segments[0] === 'projetos' && segments[1]) {
+      this.showProject(segments[1].replace('.html', ''));
+    } else {
+      this.showHub();
+    }
+  },
+
+  showHub() {
+    this.currentPage = 'hub';
+    const container = document.getElementById('app');
+    container.innerHTML = this.renderHub();
+  },
+
+  showProject(id) {
+    this.currentPage = 'project';
+    this.currentProject = this.data.projetos.find(p => p.id === id);
+
+    if (!this.currentProject) {
+      this.showHub();
+      return;
+    }
+
+    const container = document.getElementById('app');
+    container.innerHTML = this.renderProject();
+  },
+
+  renderHub() {
+    const projetos = this.data.projetos;
+
+    return `
+      <div class="hub">
+        <header class="hub-header">
+          <div class="hub-avatar">🚀</div>
+          <h1 class="hub-title">Galeria de Projetos</h1>
+          <p class="hub-subtitle">Projetos de apps e código com IA</p>
+        </header>
+
+        <div class="hub-list">
+          ${projetos.map(p => this.renderProjectCard(p)).join('')}
+        </div>
+      </div>
+
+      <button class="edit-btn" onclick="Editor.open()" title="Editar projetos">
+        ✏️
+      </button>
+    `;
+  },
+
+  renderProjectCard(project) {
+    return `
+      <a href="projetos/${project.id}.html" class="project-card" data-link>
+        <div class="project-icon" style="background: ${project.cor}20">
+          ${project.icone}
+        </div>
+        <div class="project-info">
+          <div class="project-title">${project.titulo}</div>
+          <div class="project-meta">v${project.versao} · ${this.getStatusLabel(project.status)}</div>
+        </div>
+        <div class="project-status ${project.status}"></div>
+      </a>
+    `;
+  },
+
+  renderProject() {
+    const p = this.currentProject;
+
+    return `
+      <div class="project-page">
+        <a href="/" class="project-back" data-link>
+          ← Voltar
+        </a>
+
+        <header class="project-header">
+          <div class="project-page-icon" style="background: ${p.cor}20">
+            ${p.icone}
+          </div>
+          <h1 class="project-page-title">${p.titulo}</h1>
+          <p class="project-page-desc">${p.descricao}</p>
+        </header>
+
+        <div class="status-badge ${p.status}">
+          <span class="status-dot"></span>
+          ${this.getStatusLabel(p.status)}
+        </div>
+
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-label">Versão</div>
+            <div class="info-value">v${p.versao}</div>
+          </div>
+          <div class="info-card">
+            <div class="info-label">Atualizado</div>
+            <div class="info-value">${p.atualizadoEm}</div>
+          </div>
+        </div>
+
+        <h3 class="section-title">Tecnologias</h3>
+        <div class="tech-tags">
+          ${p.tecnologias.map(t => `<span class="tech-tag">${t}</span>`).join('')}
+        </div>
+
+        <h3 class="section-title">Sobre o Projeto</h3>
+        <p class="description-text">${p.descricao}</p>
+      </div>
+
+      <button class="edit-btn" onclick="Editor.openForProject('${p.id}')" title="Editar projeto">
+        ✏️
+      </button>
+    `;
+  },
+
+  getStatusLabel(status) {
+    const labels = {
+      'nao-iniciado': 'Não Iniciado',
+      'em-andamento': 'Em Andamento',
+      'funcionando': 'Funcionando'
+    };
+    return labels[status] || status;
+  },
+
+  updateData(newData) {
+    this.data = newData;
+    if (this.currentPage === 'hub') {
+      this.showHub();
+    } else if (this.currentProject) {
+      this.currentProject = this.data.projetos.find(p => p.id === this.currentProject.id);
+      this.showProject(this.currentProject.id);
+    }
+  }
+};
+
+document.addEventListener('DOMContentLoaded', () => App.init());
