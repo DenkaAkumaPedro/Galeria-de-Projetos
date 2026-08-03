@@ -7,8 +7,12 @@ Site estilo linktree com lista de projetos de apps e código desenvolvidos com I
 - **Hub de Projetos**: Lista visual estilo linktree com todos os projetos
 - **Páginas Individuais**: Detalhes completos de cada projeto
 - **Indicadores Visuais**: Status com cores (vermelho, amarelo, verde)
-- **Editor Simples**: Interface para editar projetos pelo celular
+- **Tema Claro/Escuro**: Toggle no canto inferior direito
 - **Design Responsivo**: Funciona perfeitamente em qualquer dispositivo
+
+## 🌗 Tema
+
+O site possui dois temas (claro e escuro). Use o botão no canto inferior direito para alternar. A preferência é salva automaticamente.
 
 ## 📊 Status dos Projetos
 
@@ -18,13 +22,6 @@ Site estilo linktree com lista de projetos de apps e código desenvolvidos com I
 
 ## 🛠️ Como Adicionar um Projeto
 
-### Opção 1: Usando o Editor (Recomendado)
-1. Acesse o site
-2. Clique no botão ✏️ (canto inferior direito)
-3. Preencha os dados do projeto
-4. Clique em "Criar Projeto"
-
-### Opção 2: Editando o Arquivo JSON
 1. Abra o arquivo `data/projetos.json`
 2. Adicione uma nova entrada na lista:
 
@@ -50,10 +47,9 @@ Site estilo linktree com lista de projetos de apps e código desenvolvidos com I
 galeria-de-projetos/
 ├── index.html              # Página principal (hub)
 ├── css/
-│   └── style.css           # Estilos
+│   └── style.css           # Estilos (tema claro e escuro)
 ├── js/
-│   ├── app.js              # Lógica principal
-│   └── editor.js           # Interface de edição
+│   └── app.js              # Lógica principal, roteamento e tema
 ├── projetos/
 │   ├── ia-dia-a-dia.html
 │   ├── automacao-tarefas.html
@@ -74,14 +70,6 @@ galeria-de-projetos/
 2. Configure o build:
    - **Build command**: (deixe vazio)
    - **Build output directory**: `/`
-
-## 📱 Editar pelo Celuar
-
-O editor foi projetado para funcionar bem em dispositivos móveis:
-1. Acesse o site no navegador do celular
-2. Clique no botão ✏️
-3. Use o formulário para adicionar/editar projetos
-4. As alterações são salvas automaticamente
 
 ## 🎨 Personalização
 

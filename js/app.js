@@ -9,6 +9,7 @@ const App = {
 
   async init() {
     await this.loadData();
+    this.loadTheme();
     this.setupRouter();
     this.handleRoute();
   },
@@ -89,8 +90,8 @@ const App = {
         </div>
       </div>
 
-      <button class="edit-btn" onclick="Editor.open()" title="Editar projetos">
-        ✏️
+      <button class="theme-toggle" onclick="App.toggleTheme()" title="Alternar tema">
+        <span class="theme-toggle-icon"></span>
       </button>
     `;
   },
@@ -104,6 +105,7 @@ const App = {
         <div class="project-info">
           <div class="project-title">${project.titulo}</div>
           <div class="project-meta">v${project.versao} · ${this.getStatusLabel(project.status)}</div>
+          <div class="project-date">${project.atualizadoEm}</div>
         </div>
         <div class="project-status ${project.status}"></div>
       </a>
@@ -152,8 +154,8 @@ const App = {
         <p class="description-text">${p.descricao}</p>
       </div>
 
-      <button class="edit-btn" onclick="Editor.openForProject('${p.id}')" title="Editar projeto">
-        ✏️
+      <button class="theme-toggle" onclick="App.toggleTheme()" title="Alternar tema">
+        <span class="theme-toggle-icon"></span>
       </button>
     `;
   },
@@ -167,14 +169,16 @@ const App = {
     return labels[status] || status;
   },
 
-  updateData(newData) {
-    this.data = newData;
-    if (this.currentPage === 'hub') {
-      this.showHub();
-    } else if (this.currentProject) {
-      this.currentProject = this.data.projetos.find(p => p.id === this.currentProject.id);
-      this.showProject(this.currentProject.id);
-    }
+  loadTheme() {
+    const saved = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', saved);
+  },
+
+  toggleTheme() {
+    const current = document.documentElement.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
   }
 };
 
