@@ -96,7 +96,7 @@ const App = {
         </div>
 
         <footer class="hub-footer">
-          <a href="log.html" class="footer-btn" data-link>📋 Histórico de Alterações</a>
+          <a href="log.html" class="footer-btn">📋 Histórico de Alterações</a>
         </footer>
       </div>
 
