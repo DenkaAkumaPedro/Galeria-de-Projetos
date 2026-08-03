@@ -67,9 +67,9 @@ body {
 }
 
 .hub-avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   background: linear-gradient(135deg, #6366f1, #a855f7);
   display: flex;
   align-items: center;
@@ -77,6 +77,7 @@ body {
   margin: 0 auto 16px;
   font-size: 36px;
   color: white;
+  object-fit: cover;
 }
 
 .hub-title {
@@ -88,6 +89,116 @@ body {
 .hub-subtitle {
   font-size: 14px;
   color: var(--text-secondary);
+}
+
+.hub-dates {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.hub-date-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.hub-footer {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.footer-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all var(--transition);
+  cursor: pointer;
+}
+
+.footer-btn:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+  background: color-mix(in srgb, #6366f1 15%, var(--bg-card));
+  border-color: color-mix(in srgb, #6366f1 40%, transparent);
+}
+
+/* ============================================
+   PÁGINA DE LOG
+   ============================================ */
+
+.log-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.log-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.log-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.log-subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.log-update {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.log-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.log-item {
+  padding: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: all var(--transition);
+}
+
+.log-item:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+  background: color-mix(in srgb, #6366f1 10%, var(--bg-card));
+  border-color: color-mix(in srgb, #6366f1 30%, transparent);
+}
+
+.log-date {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.log-desc {
+  font-size: 15px;
+  color: var(--text-primary);
+  line-height: 1.5;
 }
 
 .hub-list {
@@ -116,7 +227,9 @@ body {
 
 .project-card:hover {
   box-shadow: var(--shadow-hover);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  background: color-mix(in srgb, var(--project-color) 15%, var(--bg-card));
+  border-color: color-mix(in srgb, var(--project-color) 40%, transparent);
 }
 
 .project-card:active {
@@ -126,7 +239,7 @@ body {
 .project-icon {
   width: 48px;
   height: 48px;
-  border-radius: var(--radius-sm);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -149,12 +262,13 @@ body {
 }
 
 .project-meta {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--text-muted);
+  font-weight: 500;
 }
 
 .project-date {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--text-muted);
   margin-top: 2px;
 }
@@ -191,16 +305,25 @@ body {
 .project-back {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  color: var(--text-secondary);
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
   text-decoration: none;
   margin-bottom: 32px;
-  transition: color var(--transition);
+  padding: 12px 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: all var(--transition);
 }
 
 .project-back:hover {
-  color: var(--text-primary);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+  background: color-mix(in srgb, var(--project-color, #6366f1) 10%, var(--bg-card));
+  border-color: color-mix(in srgb, var(--project-color, #6366f1) 30%, transparent);
 }
 
 .project-header {
@@ -210,7 +333,7 @@ body {
 .project-page-icon {
   width: 64px;
   height: 64px;
-  border-radius: var(--radius);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -357,10 +480,10 @@ body {
   right: 24px;
   width: 56px;
   height: 56px;
-  border-radius: 50%;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   background: var(--bg-card);
   color: var(--text-primary);
-  border: 1px solid var(--border);
+  border: none;
   cursor: pointer;
   display: flex;
   align-items: center;

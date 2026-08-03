@@ -1,0 +1,41 @@
+{
+  "dataAtualizacao": "03/08/2026",
+  "alteracoes": [
+    {
+      "data": "03/08/2026",
+      "descricao": "Criação inicial do site Galeria de Projetos"
+    },
+    {
+      "data": "03/08/2026",
+      "descricao": "Alteração do texto principal para 'Projetos para aplicar com IA'"
+    },
+    {
+      "data": "03/08/2026",
+      "descricao": "Troca dos ícones: Projeto Vtuber (🎤→🎭) e Tradutor de Tela (🌐→📖)"
+    },
+    {
+      "data": "03/08/2026",
+      "descricao": "Aumento do tamanho do texto de versão e data nos cards"
+    },
+    {
+      "data": "03/08/2026",
+      "descricao": "Adição de feedback visual de hover nos cards e elementos interativos"
+    },
+    {
+      "data": "03/08/2026",
+      "descricao": "Aumento do avatar de 80px para 140px com centralização"
+    },
+    {
+      "data": "03/08/2026",
+      "descricao": "Adição de datas de início e última atualização abaixo do avatar"
+    },
+    {
+      "data": "03/08/2026",
+      "descricao": "Criação do rodapé com botão para histórico de alterações"
+    },
+    {
+      "data": "03/08/2026",
+      "descricao": "Criação da página de log de alterações"
+    }
+  ]
+}

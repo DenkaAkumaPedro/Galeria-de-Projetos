@@ -76,18 +76,28 @@ const App = {
 
   renderHub() {
     const projetos = this.data.projetos;
+    const dataInicio = '03/08/2026';
+    const dataAtualizacao = this.data.dataAtualizacao || '03/08/2026';
 
     return `
       <div class="hub">
         <header class="hub-header">
-          <div class="hub-avatar">🚀</div>
+          <img class="hub-avatar" src="assets/Avatar.gif" alt="Avatar">
           <h1 class="hub-title">Galeria de Projetos</h1>
-          <p class="hub-subtitle">Projetos de apps e código com IA</p>
+          <p class="hub-subtitle">Projetos para aplicar com IA</p>
+          <div class="hub-dates">
+            <span class="hub-date-item">📅 Início: ${dataInicio}</span>
+            <span class="hub-date-item">🔄 Atualizado: ${dataAtualizacao}</span>
+          </div>
         </header>
 
         <div class="hub-list">
           ${projetos.map(p => this.renderProjectCard(p)).join('')}
         </div>
+
+        <footer class="hub-footer">
+          <a href="log.html" class="footer-btn" data-link>📋 Histórico de Alterações</a>
+        </footer>
       </div>
 
       <button class="theme-toggle" onclick="App.toggleTheme()" title="Alternar tema">
@@ -98,7 +108,7 @@ const App = {
 
   renderProjectCard(project) {
     return `
-      <a href="projetos/${project.id}.html" class="project-card" data-link>
+      <a href="projetos/${project.id}.html" class="project-card" data-link style="--project-color: ${project.cor}">
         <div class="project-icon" style="background: ${project.cor}20">
           ${project.icone}
         </div>
