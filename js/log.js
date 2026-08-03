@@ -55,7 +55,7 @@ const LogApp = {
   renderLogItem(item) {
     return `
       <div class="log-item">
-        <div class="log-date">${item.data}</div>
+        <div class="log-date">${item.data} às ${item.horario}</div>
         <div class="log-desc">${item.descricao}</div>
       </div>
     `;
