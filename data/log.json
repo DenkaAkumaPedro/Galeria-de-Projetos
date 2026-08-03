@@ -65,6 +65,31 @@
       "data": "03/08/2026",
       "horario": "15:45",
       "descricao": "Aumento dos ícones da lista para melhor alinhamento"
+    },
+    {
+      "data": "03/08/2026",
+      "horario": "16:00",
+      "descricao": "Correção do link Histórico de Alterações (removido data-link)"
+    },
+    {
+      "data": "03/08/2026",
+      "horario": "16:15",
+      "descricao": "Alinhamento das datas à direita na página de log"
+    },
+    {
+      "data": "03/08/2026",
+      "horario": "16:20",
+      "descricao": "Neon nos cards de projetos usando cor correspondente a cada item"
+    },
+    {
+      "data": "03/08/2026",
+      "horario": "16:25",
+      "descricao": "Intensificação do efeito neon no avatar"
+    },
+    {
+      "data": "03/08/2026",
+      "horario": "16:30",
+      "descricao": "Adição do projeto Linktree Geral"
     }
   ]
 }

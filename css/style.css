@@ -78,7 +78,7 @@ body {
   font-size: 36px;
   color: white;
   object-fit: cover;
-  filter: drop-shadow(0 0 6px rgba(99, 102, 241, 0.5)) drop-shadow(0 0 12px rgba(99, 102, 241, 0.3));
+  filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.6)) drop-shadow(0 0 16px rgba(99, 102, 241, 0.4));
 }
 
 .hub-title {
@@ -195,6 +195,7 @@ body {
   color: var(--text-muted);
   margin-bottom: 4px;
   font-weight: 500;
+  text-align: right;
 }
 
 .log-desc {
@@ -247,7 +248,7 @@ body {
   justify-content: center;
   font-size: 28px;
   flex-shrink: 0;
-  filter: drop-shadow(0 0 3px rgba(99, 102, 241, 0.4)) drop-shadow(0 0 6px rgba(99, 102, 241, 0.2));
+  filter: drop-shadow(0 0 3px color-mix(in srgb, var(--project-color) 40%, transparent)) drop-shadow(0 0 6px color-mix(in srgb, var(--project-color) 20%, transparent));
 }
 
 .project-info {

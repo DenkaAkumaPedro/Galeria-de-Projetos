@@ -24,6 +24,17 @@
       "atualizadoEm": "03/08/2026"
     },
     {
+      "id": "linktree-geral",
+      "titulo": "Linktree Geral",
+      "status": "nao-iniciado",
+      "versao": "0.0.0",
+      "icone": "☯",
+      "cor": "#1a1a2e",
+      "descricao": "Página de links geral para consolidar todos os projetos e redes em um só lugar.",
+      "tecnologias": ["HTML", "CSS"],
+      "atualizadoEm": "03/08/2026"
+    },
+    {
       "id": "linktree-pessoal",
       "titulo": "Linktree Pessoal",
       "status": "nao-iniciado",

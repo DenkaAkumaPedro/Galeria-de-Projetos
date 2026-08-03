@@ -1,6 +1,6 @@
 # 🚀 Galeria de Projetos
 
-Site estilo linktree com lista de projetos de apps e código desenvolvidos com IA.
+Site estilo linktree com lista de projetos para aplicar com IA.
 
 ## ✨ Funcionalidades
 
@@ -9,6 +9,25 @@ Site estilo linktree com lista de projetos de apps e código desenvolvidos com I
 - **Indicadores Visuais**: Status com cores (vermelho, amarelo, verde)
 - **Tema Claro/Escuro**: Toggle no canto inferior direito
 - **Design Responsivo**: Funciona perfeitamente em qualquer dispositivo
+- **Efeito Neon**: Botões e ícones com efeito visual neon
+- **Log de Alterações**: Histórico completo de todas as modificações do site
+- **Hover Interativo**: Feedback visual ao passar o mouse nos cards
+
+## 📋 Projetos
+
+| Projeto | Ícone | Cor |
+|---------|-------|-----|
+| Aplicação de IA no Dia a dia | 🤖 | Roxo |
+| Automação de Tarefas | ⚙️ | Roxo Escuro |
+| Linktree Geral | ☯ | Azul Escuro |
+| Linktree Pessoal | 🔗 | Rosa |
+| Linktree Profissional | 💼 | Verde Água |
+| Integração com Outros Apps | 📱 | Amarelo |
+| Projeto Vtuber | 🎭 | Ciano |
+| Tradutor de Tela | 📖 | Azul |
+| Tradutor de Vídeos | 🎬 | Lilás |
+| Criação de Material de Estudos | 📚 | Verde |
+| Sincronizar Lista de Animes | 🎌 | Laranja |
 
 ## 🌗 Tema
 
@@ -16,9 +35,13 @@ O site possui dois temas (claro e escuro). Use o botão no canto inferior direit
 
 ## 📊 Status dos Projetos
 
-- 🔴 **Não Iniciado** - Projeto ainda não comenzado
+- 🔴 **Não Iniciado** - Projeto ainda não começou
 - 🟡 **Em Andamento** - Projeto em desenvolvimento
 - 🟢 **Funcionando** - Projeto concluído e funcional
+
+## 📝 Log de Alterações
+
+O site possui uma página de log de alterações (`log.html`) que registra todas as modificações com data e horário. Acesse pelo botão "Histórico de Alterações" no rodapé da página principal.
 
 ## 🛠️ Como Adicionar um Projeto
 
@@ -46,16 +69,29 @@ O site possui dois temas (claro e escuro). Use o botão no canto inferior direit
 ```
 galeria-de-projetos/
 ├── index.html              # Página principal (hub)
+├── log.html                # Página de log de alterações
+├── assets/
+│   └── Avatar.gif          # Avatar do perfil
 ├── css/
 │   └── style.css           # Estilos (tema claro e escuro)
 ├── js/
-│   └── app.js              # Lógica principal, roteamento e tema
+│   ├── app.js              # Lógica principal, roteamento e tema
+│   └── log.js              # Lógica da página de log
 ├── projetos/
 │   ├── ia-dia-a-dia.html
 │   ├── automacao-tarefas.html
-│   └── ...
+│   ├── linktree-geral.html
+│   ├── linktree-pessoal.html
+│   ├── linktree-profissional.html
+│   ├── integracao-apps.html
+│   ├── projeto-vtuber.html
+│   ├── tradutor-tela.html
+│   ├── tradutor-videos.html
+│   ├── material-estudos.html
+│   └── sincronizar-animes.html
 └── data/
-    └── projetos.json       # Dados dos projetos
+    ├── projetos.json       # Dados dos projetos
+    └── log.json            # Histórico de alterações
 ```
 
 ## 🚀 Deploy
@@ -88,11 +124,12 @@ Edite as variáveis CSS no arquivo `css/style.css`:
 Use emojis para os ícones dos projetos. Alguns exemplos:
 - 🤖 Robô
 - ⚙️ Engrenagem
+- ☯ Yin Yang
 - 🔗 Link
 - 💼 Trabalho
 - 📱 Celular
-- 🎮 Game
-- 🌐 Globo
+- 🎭 Máscara
+- 📖 Livro
 - 🎬 Filme
 - 📚 Livro
 - 🎌 Bandeira
