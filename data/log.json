@@ -3,6 +3,24 @@
   "alteracoes": [
     {
       "data": "03/08/2026",
+      "horario": "22:00",
+      "descricao": "Atualização do Sincronizar Lista de Animes para v0.0.1 com links (AniList, Inmagi, Kitsu, MyAnimeList)",
+      "projeto": "sincronizar-animes"
+    },
+    {
+      "data": "03/08/2026",
+      "horario": "22:05",
+      "descricao": "Atualização da Criação de Material de Estudos para v0.0.1 com lista de itens (resumir textos, leitor automático, resumir vídeos, glossários)",
+      "projeto": "material-estudos"
+    },
+    {
+      "data": "03/08/2026",
+      "horario": "22:10",
+      "descricao": "Atualização da Automação de Tarefas para v0.0.1 com lista de tarefas (Mandar emails automáticos)",
+      "projeto": "automacao-tarefas"
+    },
+    {
+      "data": "03/08/2026",
       "horario": "21:30",
       "descricao": "Atualização do Projeto Vtuber para v0.0.1 com status 'Em Andamento', preview e links",
       "projeto": "projeto-vtuber"

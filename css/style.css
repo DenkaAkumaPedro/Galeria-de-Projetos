@@ -567,6 +567,40 @@ body {
   line-height: 1.7;
 }
 
+/* Project Lists */
+.project-list,
+.project-numbered-list {
+  margin-bottom: 32px;
+  padding: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.project-list {
+  list-style-type: disc;
+  padding-left: 24px;
+}
+
+.project-numbered-list {
+  list-style-type: decimal;
+  padding-left: 24px;
+}
+
+.project-list li,
+.project-numbered-list li {
+  padding: 8px 0;
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-list li:last-child,
+.project-numbered-list li:last-child {
+  border-bottom: none;
+}
+
 /* ============================================
    SEÇÃO DE PREVIEW
    ============================================ */

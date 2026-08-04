@@ -15,12 +15,15 @@
     {
       "id": "automacao-tarefas",
       "titulo": "Automação de Tarefas",
-      "status": "nao-iniciado",
-      "versao": "0.0.0",
+      "status": "em-andamento",
+      "versao": "0.0.1",
       "icone": "⚙️",
       "cor": "#8b5cf6",
       "descricao": "Criar sistemas automatizados para repetir tarefas rotineiras, economizando tempo e esforço manual.",
       "tecnologias": ["Automação", "Scripts"],
+      "tarefas": [
+        { "nome": "Mandar emails automáticos", "concluida": false }
+      ],
       "atualizadoEm": "03/08/2026"
     },
     {
@@ -114,23 +117,35 @@
     {
       "id": "material-estudos",
       "titulo": "Criação de Material de Estudos",
-      "status": "nao-iniciado",
-      "versao": "0.0.0",
+      "status": "em-andamento",
+      "versao": "0.0.1",
       "icone": "📚",
       "cor": "#22c55e",
       "descricao": "Gerar material de estudo personalizado usando IA para facilitar o aprendizado.",
       "tecnologias": ["IA", "Educação"],
+      "itens": [
+        "Resumir textos",
+        "Leitor automático de texto",
+        "Resumir vídeos",
+        "Criar glossários"
+      ],
       "atualizadoEm": "03/08/2026"
     },
     {
       "id": "sincronizar-animes",
       "titulo": "Sincronizar Lista de Animes",
-      "status": "nao-iniciado",
-      "versao": "0.0.0",
+      "status": "em-andamento",
+      "versao": "0.0.1",
       "icone": "🎌",
       "cor": "#f97316",
       "descricao": "Manter uma lista de animes sincronizada entre diferentes plataformas e redes sociais.",
       "tecnologias": ["APIs", "Sincronização"],
+      "links": [
+        { "nome": "AniList", "url": "https://anilist.co/home", "icone": "fa-solid fa-film" },
+        { "nome": "Inmagi", "url": "https://inmagi.com/painel/recentes", "icone": "fa-solid fa-clapperboard" },
+        { "nome": "Kitsu", "url": "https://kitsu.app/users/DenkaAkumaPedro", "icone": "fa-solid fa-tv" },
+        { "nome": "MyAnimeList", "url": "https://myanimelist.net/profile/DenkaAkumaPedro", "icone": "fa-solid fa-list" }
+      ],
       "atualizadoEm": "03/08/2026"
     }
   ]

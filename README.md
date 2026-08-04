@@ -8,6 +8,8 @@ Site estilo linktree com lista de projetos para aplicar com IA.
 - **Páginas Individuais**: Detalhes completos de cada projeto
 - **Pré-visualização**: Iframe incorporado para projetos com URL ao vivo
 - **Links Externos**: Botões com ícones para GitHub, site ao vivo e outros links
+- **Lista de Itens**: Listas com marcadores para itens de projetos
+- **Lista de Tarefas**: Listas numeradas para tarefas de projetos
 - **Indicadores Visuais**: Status com cores (vermelho, amarelo, verde)
 - **Tema Claro/Escuro**: Toggle no canto inferior direito
 - **Design Responsivo**: Funciona perfeitamente em qualquer dispositivo
@@ -79,6 +81,33 @@ Os filtros são clicáveis e podem ser combinados. Cada entrada do log exibe uma
 ```
 
 3. Crie um arquivo HTML em `projetos/meu-projeto.html` copiando o template de outro projeto
+
+## 📝 Como Adicionar Itens ou Tarefas a um Projeto
+
+### Itens (Lista com Marcadores)
+Adicione o campo `itens` ao projeto no `projetos.json`:
+
+```json
+{
+  "itens": [
+    "Item 1",
+    "Item 2",
+    "Item 3"
+  ]
+}
+```
+
+### Tarefas (Lista Numerada)
+Adicione o campo `tarefas` ao projeto no `projetos.json`:
+
+```json
+{
+  "tarefas": [
+    { "nome": "Tarefa 1", "concluida": false },
+    { "nome": "Tarefa 2", "concluida": false }
+  ]
+}
+```
 
 ## 📝 Como Adicionar uma Alteração no Log
 

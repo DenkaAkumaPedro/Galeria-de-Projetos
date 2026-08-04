@@ -146,6 +146,20 @@ const App = {
       </div>
     ` : '';
 
+    const itensSection = p.itens && p.itens.length > 0 ? `
+      <h3 class="section-title">Itens</h3>
+      <ul class="project-list">
+        ${p.itens.map(item => `<li>${item}</li>`).join('')}
+      </ul>
+    ` : '';
+
+    const tarefasSection = p.tarefas && p.tarefas.length > 0 ? `
+      <h3 class="section-title">Tarefas</h3>
+      <ol class="project-numbered-list">
+        ${p.tarefas.map(tarefa => `<li>${tarefa.nome}</li>`).join('')}
+      </ol>
+    ` : '';
+
     return `
       <div class="project-page">
         <a href="/" class="project-back" data-link>
@@ -182,6 +196,10 @@ const App = {
         </div>
 
         ${linksSection}
+
+        ${itensSection}
+
+        ${tarefasSection}
 
         ${previewSection}
 
