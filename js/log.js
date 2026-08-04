@@ -6,6 +6,7 @@ const LogApp = {
   data: null,
   projetos: null,
   filtrosAtivos: ['todos'],
+  ordemAtual: 'recente',
 
   async init() {
     await this.loadData();
@@ -81,14 +82,29 @@ const LogApp = {
     return alteracoes.filter(item => this.filtrosAtivos.includes(item.projeto));
   },
 
+  toggleOrdem() {
+    this.ordemAtual = this.ordemAtual === 'recente' ? 'antigo' : 'recente';
+    this.render();
+  },
+
+  getSortedChanges() {
+    const alteracoes = this.getFilteredChanges();
+    if (this.ordemAtual === 'recente') {
+      return alteracoes;
+    }
+    return [...alteracoes].reverse();
+  },
+
   render() {
     const container = document.getElementById('app');
     container.innerHTML = this.renderPage();
   },
 
   renderPage() {
-    const alteracoes = this.getFilteredChanges().reverse();
+    const alteracoes = this.getSortedChanges();
     const projetosComAlteracoes = this.getProjetosComAlteracoes();
+
+    const sortLabel = this.ordemAtual === 'recente' ? 'Mais recente primeiro' : 'Mais antigo primeiro';
 
     return `
       <div class="log-page">
@@ -103,6 +119,11 @@ const LogApp = {
         </header>
 
         ${this.renderFilters(projetosComAlteracoes)}
+
+        <button class="log-sort-btn" onclick="LogApp.toggleOrdem()">
+          <span class="sort-icon">🔄</span>
+          ${sortLabel}
+        </button>
 
         <div class="log-list">
           ${alteracoes.length > 0

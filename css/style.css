@@ -295,6 +295,35 @@ body {
   font-size: 14px;
 }
 
+/* Log Sort Button */
+.log-sort-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition);
+  margin-bottom: 16px;
+  box-shadow: 0 0 4px rgba(99, 102, 241, 0.4), 0 0 8px rgba(99, 102, 241, 0.2);
+}
+
+.log-sort-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 6px rgba(99, 102, 241, 0.6), 0 0 12px rgba(99, 102, 241, 0.3), var(--shadow-hover);
+  background: color-mix(in srgb, #6366f1 10%, var(--bg-card));
+  border-color: color-mix(in srgb, #6366f1 40%, transparent);
+}
+
+.log-sort-btn .sort-icon {
+  font-size: 14px;
+}
+
 .hub-list {
   display: flex;
   flex-direction: column;
