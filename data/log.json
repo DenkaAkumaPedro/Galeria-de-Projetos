@@ -90,6 +90,21 @@
       "data": "03/08/2026",
       "horario": "16:30",
       "descricao": "Adição do projeto Linktree Geral"
+    },
+    {
+      "data": "03/08/2026",
+      "horario": "17:00",
+      "descricao": "Inversão da ordem dos itens no log (mais recente no topo)"
+    },
+    {
+      "data": "03/08/2026",
+      "horario": "17:05",
+      "descricao": "Aumento do contorno neon no avatar"
+    },
+    {
+      "data": "03/08/2026",
+      "horario": "17:10",
+      "descricao": "Aumento do contraste no modo claro"
     }
   ]
 }

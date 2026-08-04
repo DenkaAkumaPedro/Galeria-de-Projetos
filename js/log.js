@@ -27,7 +27,7 @@ const LogApp = {
   },
 
   renderPage() {
-    const alteracoes = this.data.alteracoes || [];
+    const alteracoes = (this.data.alteracoes || []).reverse();
 
     return `
       <div class="log-page">

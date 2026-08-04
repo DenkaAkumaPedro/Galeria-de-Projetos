@@ -4,7 +4,7 @@
 
 /* Reset e Variáveis - Tema Claro (padrão) */
 :root {
-  --bg-primary: #fafafa;
+  --bg-primary: #e8e8e8;
   --bg-card: #ffffff;
   --text-primary: #171717;
   --text-secondary: #525252;
@@ -78,7 +78,7 @@ body {
   font-size: 36px;
   color: white;
   object-fit: cover;
-  filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.6)) drop-shadow(0 0 16px rgba(99, 102, 241, 0.4));
+  filter: drop-shadow(0 0 10px rgba(99, 102, 241, 0.7)) drop-shadow(0 0 24px rgba(99, 102, 241, 0.5));
 }
 
 .hub-title {
