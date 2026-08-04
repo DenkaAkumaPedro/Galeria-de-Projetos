@@ -45,6 +45,14 @@ O site possui dois temas (claro e escuro). Use o botão no canto inferior direit
 
 O site possui uma página de log de alterações (`log.html`) que registra todas as modificações com data e horário. Acesse pelo botão "Histórico de Alterações" no rodapé da página principal.
 
+### Filtros por Projeto
+A página de log possui um sistema de filtros que permite visualizar alterações de projetos específicos:
+- **Botão "Todos"**: Mostra todas as alterações
+- **Botão "Geral"**: Mostra apenas alterações gerais do site
+- **Botões dos projetos**: Mostra apenas alterações do projeto selecionado
+
+Os filtros são clicáveis e podem ser combinados. Cada entrada do log exibe uma tag com o nome e ícone do projeto a que se refere.
+
 ## 🛠️ Como Adicionar um Projeto
 
 1. Abra o arquivo `data/projetos.json`
@@ -71,6 +79,22 @@ O site possui uma página de log de alterações (`log.html`) que registra todas
 ```
 
 3. Crie um arquivo HTML em `projetos/meu-projeto.html` copiando o template de outro projeto
+
+## 📝 Como Adicionar uma Alteração no Log
+
+1. Abra o arquivo `data/log.json`
+2. Adicione uma nova entrada na lista de `alteracoes`:
+
+```json
+{
+  "data": "03/08/2026",
+  "horario": "22:00",
+  "descricao": "Descrição da alteração realizada",
+  "projeto": "meu-projeto"
+}
+```
+
+O campo `projeto` deve conter o ID do projeto (ex: `"projeto-vtuber"`) ou `"geral"` para alterações gerais do site.
 
 ## 📁 Estrutura do Projeto
 

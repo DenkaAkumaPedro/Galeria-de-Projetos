@@ -4,142 +4,170 @@
     {
       "data": "03/08/2026",
       "horario": "21:30",
-      "descricao": "Atualização do Projeto Vtuber para v0.0.1 com status 'Em Andamento', preview e links"
+      "descricao": "Atualização do Projeto Vtuber para v0.0.1 com status 'Em Andamento', preview e links",
+      "projeto": "projeto-vtuber"
     },
     {
       "data": "03/08/2026",
       "horario": "21:35",
-      "descricao": "Atualização do Linktree Profissional para v0.0.1 com links e correção da descrição"
+      "descricao": "Atualização do Linktree Profissional para v0.0.1 com links e correção da descrição",
+      "projeto": "linktree-profissional"
     },
     {
       "data": "03/08/2026",
       "horario": "21:40",
-      "descricao": "Adição de seção de pré-visualização (iframe) na página do projeto"
+      "descricao": "Adição de seção de pré-visualização (iframe) na página do projeto",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "21:45",
-      "descricao": "Adição de seção de links com ícones nas páginas de projeto"
+      "descricao": "Adição de seção de links com ícones nas páginas de projeto",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "10:00",
-      "descricao": "Criação inicial do site Galeria de Projetos"
+      "descricao": "Criação inicial do site Galeria de Projetos",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "14:30",
-      "descricao": "Alteração do texto principal para 'Projetos para aplicar com IA'"
+      "descricao": "Alteração do texto principal para 'Projetos para aplicar com IA'",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "14:35",
-      "descricao": "Troca dos ícones: Projeto Vtuber (🎤→🎭) e Tradutor de Tela (🌐→📖)"
+      "descricao": "Troca dos ícones: Projeto Vtuber (🎤→🎭) e Tradutor de Tela (🌐→📖)",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "14:40",
-      "descricao": "Aumento do tamanho do texto de versão e data nos cards"
+      "descricao": "Aumento do tamanho do texto de versão e data nos cards",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "14:45",
-      "descricao": "Adição de feedback visual de hover nos cards e elementos interativos"
+      "descricao": "Adição de feedback visual de hover nos cards e elementos interativos",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "14:50",
-      "descricao": "Aumento do avatar de 80px para 140px com centralização"
+      "descricao": "Aumento do avatar de 80px para 140px com centralização",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "14:55",
-      "descricao": "Adição de datas de início e última atualização abaixo do avatar"
+      "descricao": "Adição de datas de início e última atualização abaixo do avatar",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "15:00",
-      "descricao": "Criação do rodapé com botão para histórico de alterações"
+      "descricao": "Criação do rodapé com botão para histórico de alterações",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "15:05",
-      "descricao": "Criação da página de log de alterações"
+      "descricao": "Criação da página de log de alterações",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "15:30",
-      "descricao": "Adição de horário nas entradas do log"
+      "descricao": "Adição de horário nas entradas do log",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "15:35",
-      "descricao": "Adição de efeito neon em botões e ícones"
+      "descricao": "Adição de efeito neon em botões e ícones",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "15:40",
-      "descricao": "Aumento do espaço entre itens nas listas"
+      "descricao": "Aumento do espaço entre itens nas listas",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "15:45",
-      "descricao": "Aumento dos ícones da lista para melhor alinhamento"
+      "descricao": "Aumento dos ícones da lista para melhor alinhamento",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "16:00",
-      "descricao": "Correção do link Histórico de Alterações (removido data-link)"
+      "descricao": "Correção do link Histórico de Alterações (removido data-link)",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "16:15",
-      "descricao": "Alinhamento das datas à direita na página de log"
+      "descricao": "Alinhamento das datas à direita na página de log",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "16:20",
-      "descricao": "Neon nos cards de projetos usando cor correspondente a cada item"
+      "descricao": "Neon nos cards de projetos usando cor correspondente a cada item",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "16:25",
-      "descricao": "Intensificação do efeito neon no avatar"
+      "descricao": "Intensificação do efeito neon no avatar",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "16:30",
-      "descricao": "Adição do projeto Linktree Geral"
+      "descricao": "Adição do projeto Linktree Geral",
+      "projeto": "linktree-geral"
     },
     {
       "data": "03/08/2026",
       "horario": "17:00",
-      "descricao": "Inversão da ordem dos itens no log (mais recente no topo)"
+      "descricao": "Inversão da ordem dos itens no log (mais recente no topo)",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "17:05",
-      "descricao": "Aumento do contorno neon no avatar"
+      "descricao": "Aumento do contorno neon no avatar",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "17:10",
-      "descricao": "Aumento do contraste no modo claro"
+      "descricao": "Aumento do contraste no modo claro",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "21:15",
-      "descricao": "Criação da pasta 'Specificações do site' com 7 arquivos de especificação em PT e EN"
+      "descricao": "Criação da pasta 'Specificações do site' com 7 arquivos de especificação em PT e EN",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "21:20",
-      "descricao": "Documentação completa: CONTENT, DESIGN, FUNCTIONAL, PROJECT, SETUP, TECHNICAL e TEXTOS"
+      "descricao": "Documentação completa: CONTENT, DESIGN, FUNCTIONAL, PROJECT, SETUP, TECHNICAL e TEXTOS",
+      "projeto": "geral"
     },
     {
       "data": "03/08/2026",
       "horario": "21:25",
-      "descricao": "Código fonte completo do app.js e log.js incluído nas especificações técnicas"
+      "descricao": "Código fonte completo do app.js e log.js incluído nas especificações técnicas",
+      "projeto": "geral"
     }
   ]
 }

@@ -204,6 +204,97 @@ body {
   line-height: 1.5;
 }
 
+/* Log Filters */
+.log-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.log-filter-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.log-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.log-filter-btn:hover {
+  background: color-mix(in srgb, var(--filter-color, #6366f1) 15%, var(--bg-primary));
+  border-color: color-mix(in srgb, var(--filter-color, #6366f1) 40%, transparent);
+}
+
+.log-filter-btn.active {
+  background: color-mix(in srgb, var(--filter-color, #6366f1) 20%, var(--bg-card));
+  border-color: color-mix(in srgb, var(--filter-color, #6366f1) 50%, transparent);
+  color: var(--text-primary);
+  box-shadow: 0 0 4px color-mix(in srgb, var(--filter-color, #6366f1) 30%, transparent);
+}
+
+.log-filter-btn .filter-icon {
+  font-size: 14px;
+}
+
+.log-filter-btn .filter-count {
+  font-size: 11px;
+  background: var(--bg-primary);
+  padding: 1px 6px;
+  border-radius: 10px;
+  color: var(--text-muted);
+}
+
+.log-filter-btn.active .filter-count {
+  background: color-mix(in srgb, var(--filter-color, #6366f1) 30%, transparent);
+  color: var(--text-primary);
+}
+
+/* Log Project Tag */
+.log-project-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  background: color-mix(in srgb, var(--tag-color, #6366f1) 15%, transparent);
+  border: 1px solid color-mix(in srgb, var(--tag-color, #6366f1) 30%, transparent);
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--tag-color, #6366f1);
+  margin-bottom: 6px;
+}
+
+.log-project-tag .tag-icon {
+  font-size: 12px;
+}
+
+/* Log Empty State */
+.log-empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
 .hub-list {
   display: flex;
   flex-direction: column;
