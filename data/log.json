@@ -3,6 +3,26 @@
   "alteracoes": [
     {
       "data": "03/08/2026",
+      "horario": "21:30",
+      "descricao": "Atualização do Projeto Vtuber para v0.0.1 com status 'Em Andamento', preview e links"
+    },
+    {
+      "data": "03/08/2026",
+      "horario": "21:35",
+      "descricao": "Atualização do Linktree Profissional para v0.0.1 com links e correção da descrição"
+    },
+    {
+      "data": "03/08/2026",
+      "horario": "21:40",
+      "descricao": "Adição de seção de pré-visualização (iframe) na página do projeto"
+    },
+    {
+      "data": "03/08/2026",
+      "horario": "21:45",
+      "descricao": "Adição de seção de links com ícones nas páginas de projeto"
+    },
+    {
+      "data": "03/08/2026",
       "horario": "10:00",
       "descricao": "Criação inicial do site Galeria de Projetos"
     },

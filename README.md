@@ -6,6 +6,8 @@ Site estilo linktree com lista de projetos para aplicar com IA.
 
 - **Hub de Projetos**: Lista visual estilo linktree com todos os projetos
 - **Páginas Individuais**: Detalhes completos de cada projeto
+- **Pré-visualização**: Iframe incorporado para projetos com URL ao vivo
+- **Links Externos**: Botões com ícones para GitHub, site ao vivo e outros links
 - **Indicadores Visuais**: Status com cores (vermelho, amarelo, verde)
 - **Tema Claro/Escuro**: Toggle no canto inferior direito
 - **Design Responsivo**: Funciona perfeitamente em qualquer dispositivo
@@ -58,6 +60,12 @@ O site possui uma página de log de alterações (`log.html`) que registra todas
   "cor": "#6366f1",
   "descricao": "Descrição do projeto...",
   "tecnologias": ["HTML", "CSS", "JavaScript"],
+  "previewUrl": "https://site-do-projeto.com",
+  "githubUrl": "https://github.com/usuario/repo",
+  "links": [
+    { "nome": "GitHub", "url": "https://github.com/usuario/repo", "icone": "fa-brands fa-github" },
+    { "nome": "Site", "url": "https://site-do-projeto.com", "icone": "fa-solid fa-globe" }
+  ],
   "atualizadoEm": "03/08/2026"
 }
 ```

@@ -125,6 +125,27 @@ const App = {
   renderProject() {
     const p = this.currentProject;
 
+    const previewSection = p.previewUrl ? `
+      <h3 class="section-title">Pré-visualização</h3>
+      <div class="preview-section">
+        <div class="preview-iframe">
+          <iframe src="${p.previewUrl}" title="Pré-visualização do projeto" loading="lazy"></iframe>
+        </div>
+      </div>
+    ` : '';
+
+    const linksSection = p.links && p.links.length > 0 ? `
+      <h3 class="section-title">Links</h3>
+      <div class="preview-links">
+        ${p.links.map(link => `
+          <a href="${link.url}" class="preview-link" target="_blank" rel="noopener noreferrer">
+            <i class="${link.icone}"></i>
+            ${link.nome}
+          </a>
+        `).join('')}
+      </div>
+    ` : '';
+
     return `
       <div class="project-page">
         <a href="/" class="project-back" data-link>
@@ -159,6 +180,10 @@ const App = {
         <div class="tech-tags">
           ${p.tecnologias.map(t => `<span class="tech-tag">${t}</span>`).join('')}
         </div>
+
+        ${linksSection}
+
+        ${previewSection}
 
         <h3 class="section-title">Sobre o Projeto</h3>
         <p class="description-text">${p.descricao}</p>

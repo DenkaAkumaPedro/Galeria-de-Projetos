@@ -48,12 +48,17 @@
     {
       "id": "linktree-profissional",
       "titulo": "Linktree Profissional",
-      "status": "nao-iniciado",
-      "versao": "0.0.0",
+      "status": "em-andamento",
+      "versao": "0.0.1",
       "icone": "💼",
       "cor": "#14b8a6",
-      "descricao": "Página de links profissional para展示 trabalhos, portfólio e contato profissional.",
-      "tecnologias": ["HTML", "CSS"],
+      "descricao": "Linktree profissional para exibir trabalhos, portfólio e contato profissional. Criado com HTML e CSS puro, estilizado com efeito hexagonal flutuante.",
+      "tecnologias": ["HTML", "CSS", "JavaScript"],
+      "previewUrl": "",
+      "githubUrl": "https://github.com/DenkaAkumaPedro/Link-Hub-M2-T",
+      "links": [
+        { "nome": "GitHub", "url": "https://github.com/DenkaAkumaPedro/Link-Hub-M2-T", "icone": "fa-brands fa-github" }
+      ],
       "atualizadoEm": "03/08/2026"
     },
     {
@@ -70,12 +75,18 @@
     {
       "id": "projeto-vtuber",
       "titulo": "Projeto Vtuber",
-      "status": "nao-iniciado",
-      "versao": "0.0.0",
+      "status": "em-andamento",
+      "versao": "0.0.1",
       "icone": "🎭",
       "cor": "#39c5cf",
-      "descricao": "Explorar a criação de um avatar virtual para conteúdo em vídeo e streaming.",
-      "tecnologias": ["3D", "Avatar", "IA"],
+      "descricao": "Linktree para o Projeto Vtuber com efeito canvas hexagonal flutuante, foto de perfil e links para páginas internas.",
+      "tecnologias": ["HTML", "CSS", "JavaScript", "Canvas"],
+      "previewUrl": "https://linktree-projeto-futuro.pedro-travassos-lima-silva.workers.dev/",
+      "githubUrl": "https://github.com/DenkaAkumaPedro/linktree-projeto-futuro",
+      "links": [
+        { "nome": "Site ao Vivo", "url": "https://linktree-projeto-futuro.pedro-travassos-lima-silva.workers.dev/", "icone": "fa-solid fa-globe" },
+        { "nome": "GitHub", "url": "https://github.com/DenkaAkumaPedro/linktree-projeto-futuro", "icone": "fa-brands fa-github" }
+      ],
       "atualizadoEm": "03/08/2026"
     },
     {
