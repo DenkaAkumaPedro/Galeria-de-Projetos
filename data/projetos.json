@@ -107,12 +107,13 @@
       "id": "tradutor-videos",
       "titulo": "Tradutor de Vídeos",
       "status": "em-andamento",
-      "versao": "0.0.1",
+      "versao": "0.1.0",
       "icone": "🎬",
       "cor": "#a855f7",
       "descricao": "Sistema para traduzir automaticamente o áudio de vídeos, gerando legendas ou dublagem.",
       "tecnologias": ["IA", "Áudio", "Legendas"],
       "previewUrl": "https://video-translator-9nva.onrender.com",
+      "downloadUrl": "#",
       "atualizadoEm": "05/08/2026"
     },
     {

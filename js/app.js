@@ -160,6 +160,14 @@ const App = {
       </ol>
     ` : '';
 
+    const downloadSection = p.downloadUrl ? `
+      <h3 class="section-title">Download</h3>
+      <a href="${p.downloadUrl}" class="preview-link" target="_blank" rel="noopener noreferrer">
+        <i class="fa-solid fa-download"></i>
+        Baixar versão Windows
+      </a>
+    ` : '';
+
     return `
       <div class="project-page">
         <a href="/" class="project-back" data-link>
@@ -202,6 +210,8 @@ const App = {
         ${tarefasSection}
 
         ${previewSection}
+
+        ${downloadSection}
 
         <h3 class="section-title">Sobre o Projeto</h3>
         <p class="description-text">${p.descricao}</p>
