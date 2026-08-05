@@ -16,7 +16,7 @@ const App = {
 
   async loadData() {
     try {
-      const response = await fetch('data/projetos.json');
+      const response = await fetch('/data/projetos.json');
       this.data = await response.json();
     } catch (error) {
       console.error('Erro ao carregar dados:', error);
