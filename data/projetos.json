@@ -106,14 +106,14 @@
     {
       "id": "tradutor-videos",
       "titulo": "Tradutor de Vídeos",
-      "status": "nao-iniciado",
-      "versao": "0.0.0",
+      "status": "em-andamento",
+      "versao": "0.0.1",
       "icone": "🎬",
       "cor": "#a855f7",
       "descricao": "Sistema para traduzir automaticamente o áudio de vídeos, gerando legendas ou dublagem.",
       "tecnologias": ["IA", "Áudio", "Legendas"],
       "previewUrl": "https://video-translator.onrender.com",
-      "atualizadoEm": "03/08/2026"
+      "atualizadoEm": "05/08/2026"
     },
     {
       "id": "material-estudos",

@@ -17,7 +17,7 @@ const LogApp = {
 
   async loadData() {
     try {
-      const response = await fetch('data/log.json');
+      const response = await fetch('/data/log.json');
       this.data = await response.json();
     } catch (error) {
       console.error('Erro ao carregar dados:', error);
@@ -27,7 +27,7 @@ const LogApp = {
 
   async loadProjetos() {
     try {
-      const response = await fetch('data/projetos.json');
+      const response = await fetch('/data/projetos.json');
       const data = await response.json();
       this.projetos = data.projetos || [];
     } catch (error) {

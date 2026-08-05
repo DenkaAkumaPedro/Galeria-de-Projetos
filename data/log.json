@@ -1,6 +1,18 @@
 {
-  "dataAtualizacao": "03/08/2026",
+  "dataAtualizacao": "05/08/2026",
   "alteracoes": [
+    {
+      "data": "05/08/2026",
+      "horario": "15:00",
+      "descricao": "Adição de preview do Tradutor de Vídeos (iframe do app externo) e atualização do projeto para v0.0.1 em andamento",
+      "projeto": "tradutor-videos"
+    },
+    {
+      "data": "05/08/2026",
+      "horario": "15:05",
+      "descricao": "Correção do caminho fetch no app.js e log.js de relativo para absoluto (/data/projetos.json)",
+      "projeto": "geral"
+    },
     {
       "data": "03/08/2026",
       "horario": "22:00",
