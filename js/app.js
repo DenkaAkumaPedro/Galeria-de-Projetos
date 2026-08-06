@@ -209,9 +209,9 @@ const App = {
 
         ${tarefasSection}
 
-        ${previewSection}
-
         ${downloadSection}
+
+        ${previewSection}
 
         <h3 class="section-title">Sobre o Projeto</h3>
         <p class="description-text">${p.descricao}</p>
