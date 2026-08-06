@@ -660,6 +660,30 @@ body {
   margin-bottom: 32px;
 }
 
+.download-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 850px;
+  max-width: 100%;
+  padding: 14px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all var(--transition);
+  box-shadow: 0 0 4px rgba(99, 102, 241, 0.4), 0 0 8px rgba(99, 102, 241, 0.2);
+  margin-bottom: 48px;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+}
+
 .preview-link {
   display: inline-flex;
   align-items: center;

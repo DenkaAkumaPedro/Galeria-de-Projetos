@@ -162,9 +162,16 @@ const App = {
 
     const downloadSection = p.downloadUrl ? `
       <h3 class="section-title">Download</h3>
-      <a href="${p.downloadUrl}" class="preview-link" target="_blank" rel="noopener noreferrer">
+      <a href="${p.downloadUrl}" class="download-btn" target="_blank" rel="noopener noreferrer">
         <i class="fa-solid fa-download"></i>
         Baixar versão Windows
+      </a>
+    ` : '';
+
+    const webAppSection = p.previewUrl ? `
+      <a href="${p.previewUrl}" class="download-btn" target="_blank" rel="noopener noreferrer">
+        <i class="fa-solid fa-globe"></i>
+        Abra o programa versão web
       </a>
     ` : '';
 
@@ -212,6 +219,8 @@ const App = {
         ${downloadSection}
 
         ${previewSection}
+
+        ${webAppSection}
 
         <h3 class="section-title">Sobre o Projeto</h3>
         <p class="description-text">${p.descricao}</p>
