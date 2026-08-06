@@ -113,7 +113,7 @@
       "descricao": "Sistema para traduzir automaticamente o áudio de vídeos, gerando legendas ou dublagem.",
       "tecnologias": ["IA", "Áudio", "Legendas"],
       "previewUrl": "https://video-translator-9nva.onrender.com",
-      "downloadUrl": "#",
+      "downloadUrl": "/assets/DownloadUrl/VideoTranslator_Beta-010.exe",
       "atualizadoEm": "05/08/2026"
     },
     {
